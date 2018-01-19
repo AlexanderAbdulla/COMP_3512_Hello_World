@@ -9,7 +9,7 @@
 int gcd(const int a, const int b)
 {
 	// Replace this line with your code (have fun!).
-	return 0;
+	return 0; 
 }
 
 // Fibonacci
