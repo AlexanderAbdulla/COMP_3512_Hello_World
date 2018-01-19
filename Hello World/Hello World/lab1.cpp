@@ -9,7 +9,17 @@
 int gcd(const int a, const int b)
 {
 	// Replace this line with your code (have fun!).
-	return 0; 
+	
+	int gcdMax;
+	int gcd = 1;
+	while (gcd <= a && gcd <= b) {
+		if (a % gcd == 0 && b % gcd == 0) {
+			gcdMax = gcd; 
+		}
+		gcd++;
+	}
+
+	return gcdMax; 
 }
 
 // Fibonacci
@@ -19,5 +29,13 @@ int gcd(const int a, const int b)
 long long fibonacci(const int n)
 {
 	// Replace this line with your code (challenge: do this with recursion!).
-	return 0;
+	if (n == 0) {
+		return 0;
+	}
+
+	if (n == 1) {
+		return 1; 
+	}
+
+	return  fibonacci(n -1) + fibonacci(n - 2);
 }
